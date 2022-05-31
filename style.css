@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* Regla @font-face */
+@font-face {
+    /* Me permite elegir un nombre de fuente para identificarla */
+    font-family: nunito-encabezados;
+    /* Donde está esa fuente */
+    src: url('Nunito/static/Nunito-Bold.ttf');
+}
+
+@font-face {
+    /* Me permite elegir un nombre de fuente para identificarla */
+    font-family: nunito-parrafos;
+    /* Donde está esa fuente */
+    src: url('Nunito/static/Nunito-Regular.ttf');
+}
+
+
+
+h1 {
+    font-family: nunito-encabezados;
+}
+
+/* Position me permite utilizar 
+las coordenadas top - right - bottom - left */
+
+.item-relative {
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+/* Absolute las coordenadas o lados 
+ se basan en el marco de la pantalla  */
+
+.item-absolute {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+
+}
+
+/* Fixed - pegarse a la posición que le indiquemos con los lados / coordenadas */
+.item-fixed {
+    position: fixed;
+    bottom:0;
+    right: 0;
+}
+
+/* Sticky - Funciona como fixed pero se activa recien al llegar a la posición indicada en las coordenadas / lados */
+
+.item-sticky {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    font-family: nunito-parrafos;
+}
